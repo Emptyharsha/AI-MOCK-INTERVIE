@@ -1,0 +1,399 @@
+.instructions-container {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.instructions-container ul {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.job-listing {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Job Card Styling */
+.job-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Title and Description */
+.job-card h3 {
+  font-family:'Arial', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #007BFF;
+  margin: 0;
+}
+
+.job-card p {
+  font-family:'Arial', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.job-card strong {
+  font-weight: bold;
+  font-family:'Arial', sans-serif;
+}
+
+/* Skill Groups Styling */
+.skill-groups {
+  margin-top: 20px;
+}
+
+.skill-group {
+  padding: 15px;
+  background-color: #e9f7ff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-group h4 {
+  font-size: 1.2rem;
+  color: #0066cc;
+  margin-bottom: 5px;
+  font-family:'Arial', sans-serif;
+}
+
+.skill-group p {
+  font-style: italic;
+  color: #555;
+}
+
+.skill-group ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.skill-group li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.skill-group li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsibilities Section */
+.job-card ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.job-card ul li {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Footer / Empty States */
+.job-listing p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+
+/* Dialog Backdrop */
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dialog Container */
+.dialog-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Dialog Title */
+.dialog-title {
+  font-size: 1.6rem;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dialog Message */
+.dialog-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dialog Actions */
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for job cards */
+.job-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styling for skill groups */
+.skill-group h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-group p {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+
+.skill-group ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Styling for buttons */
+.job-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.update-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.show-candidates-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.show-candidates-btn:hover {
+  background-color: #1e88e5;
+}
+
+/* Dialog styles */
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+}
+
+.dialog-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dialog-message {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dialog-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* General Accordion Styles */
+.MuiAccordion-root {
+  margin: 10px 0;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Background color for the whole accordion */
+}
+
+/* Accordion Header */
+.MuiAccordionSummary-root {
+  background-color: #4caf50; /* Change this to your desired background color */
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.MuiAccordionSummary-content {
+  margin: 0;
+}
+
+.MuiAccordionSummary-expandIcon {
+  color: white;
+}
+
+/* Accordion Details */
+.MuiAccordionDetails-root {
+  padding: 15px;
+  background-color: #e8f5e9; /* Lighter shade of green for the content background */
+  border-radius: 0 0 8px 8px;
+  font-size: 0.95rem;
+}
+
+/* Accordion Item Headers */
+.MuiTypography-root {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Styling for Accordion Lists */
+.MuiAccordionDetails-root ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.MuiAccordionDetails-root li {
+  font-size: 1rem;
+  color: #555;
+}
+
+.MuiAccordionDetails-root em {
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .MuiAccordionSummary-root {
+    padding: 8px;
+  }
+  job-list {
+
+    gap: 16px;
+    padding: 8px;
+}
+  .MuiAccordionDetails-root {
+    padding: 10px;
+  }
+
+  .MuiTypography-root {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  p {
+      margin-left: 40px;
+      font-size: 16px;
+  }
+}

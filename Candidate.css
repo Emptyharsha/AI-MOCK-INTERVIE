@@ -1,0 +1,494 @@
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  max-width: 100%;
+}
+
+.dashboard-intro {
+  margin: 20px 10px;
+}
+
+.interview-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-id {
+  width: 40%;
+  height: 40px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  cursor: default;
+}
+
+.actions-dropdown {
+  position: relative; 
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  right: 0; 
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 200px; 
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.selected-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hidden-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hidden-status label {
+  margin-right: 10px;
+}
+
+.hidden-status select {
+  margin-right: 10px;
+}
+
+.copy-link {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.horizonatl-line, .horizonatl-line2 {
+  padding-top: 1px;
+  background: rgb(218, 218, 231);
+  margin: 15px 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.candidates-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-tooltip {
+  position: relative;
+}
+
+.info-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-button:hover + .tooltip-content,
+.tooltip-content:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  left: -150px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  width: 300px;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip-content h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.tooltip-content ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.tooltip-content li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashboard-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.selected-info {
+  background-color: #e2f0ff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.dashboard-search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Ensures the table doesn't get too cramped */
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background-color: white !important; {/* Temporary forcing modal to be white */}
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-info {
+  margin-bottom: 15px;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Loading Bar Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.loading-bar {
+  width: 60%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.loading-progress {
+  position: absolute;
+  height: 100%;
+  background-color: #4a86e8;
+  border-radius: 5px;
+  animation: loading 1.5s infinite ease-in-out;
+  width: 30%;
+}
+
+@keyframes loading {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Empty State Styles */
+.empty-state-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.empty-state-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.empty-state-content svg {
+  color: #4a86e8;
+  margin-bottom: 15px;
+}
+
+.empty-state-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.empty-state-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.instruction-note {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Add this to make the "Add Candidate" button in the empty state more prominent */
+.empty-state-content .btn-primary {
+  background-color: #4a86e8;
+  border-color: #4a86e8;
+  transition: all 0.3s;
+}
+
+.empty-state-content .btn-primary:hover {
+  background-color: #3b78e7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state-content .btn-primary span {
+  font-size: 18px;
+  margin-right: 5px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .job-id {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .buttons .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-search-input {
+    max-width: 100%;
+  }
+  
+  .dashboard-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tooltip-content {
+    left: -100px;
+    width: 250px;
+  }
+}

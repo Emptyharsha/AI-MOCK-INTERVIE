@@ -1,0 +1,264 @@
+.job-opening-form {
+  background-color: #ffffff;
+  /* White background */
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #c6cdd4;
+  /* Light gray border */
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  z-index: -1;
+}
+
+.job-opening-form h2,
+.job-opening-form h3 {
+  color: #5085B6;
+  /* Themed color for headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-opening-form label {
+  font-weight: 600;
+  color: #333333;
+  /* Dark gray for labels */
+}
+
+/* Add styles for error messages */
+.has-error .input-error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+
+.success-message {
+  color: green;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.error-message {
+  color: red;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.validation-errors {
+  color: red;
+  font-size: 0.875em;
+  margin-bottom: 1em;
+}
+
+.validation-errors ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.validation-errors li {
+  margin-bottom: 0.5em;
+}
+
+.job-opening-form input[type="text"],
+.job-opening-form input[type="email"],
+.job-opening-form input[type="number"],
+.job-opening-form select {
+  width: 85%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #c6cdd4;
+  /* Light gray border */
+  border-radius: 15px;
+  background-color: #f0f4f8;
+  /* Light blue background */
+  font-size: 14px;
+  color: #333333;
+  /* Dark gray text */
+}
+
+.job-opening-form input[type="text"]:focus,
+.job-opening-form input[type="email"]:focus,
+.job-opening-form input[type="number"]:focus,
+.job-opening-form select:focus {
+  outline: none;
+  border-color: #5085B6;
+  /* Themed color for focus */
+  background-color: #e1e8f0;
+  /* Lighter blue highlight */
+  box-shadow: 0 0 4px rgba(80, 133, 182, 0.6);
+}
+
+.job-opening-form input[type="range"] {
+  width: 48%;
+  accent-color: #5085B6;
+  /* Themed color for range slider */
+}
+
+.job-opening-form button {
+  background-color: #5085B6;
+  /* Themed color for button */
+  color: #ffffff;
+  border: 2px solid #3e6489;
+  /* Darker shade for border */
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-left: 30px;
+}
+
+.add-item-row button {
+  padding-left: 15px;
+  height: 50px;
+  width: 55px;
+}
+
+.job-opening-form button:hover {
+  background-color: #3e6489;
+  /* Darker shade for hover */
+  transform: scale(1.05);
+}
+
+.job-opening-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-opening-form ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f4f8;
+  /* Light blue for list items */
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.job-opening-form ul li button {
+  background-color: transparent;
+  color: #5085B6;
+  /* Themed color for delete button */
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.job-opening-form ul li button:hover {
+  color: #3e6489;
+  /* Darker shade for hover */
+}
+
+.job-opening-form div {
+  margin-bottom: 15px;
+}
+
+.job-opening-form .form-group {
+  margin-bottom: 20px;
+  padding: 35px;
+  background-color: #f0f4f8;
+  /* Light blue for grouped sections */
+  border: 10px solid #c6cdd4;
+  /* Light gray border */
+  border-radius: 10px;
+}
+
+.job-opening-form .form-group h4 {
+  margin: 0;
+  color: #5085B6;
+  /* Themed color for headings */
+}
+
+.job-opening-form .skill-group {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 3px solid #c6cdd4;
+  /* Light gray border */
+  border-radius: 10px;
+  background-color: #f0f4f8;
+  /* Light blue */
+}
+
+.job-opening-form .skill-group h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.job-opening-form .notification-section,
+.job-opening-form .settings-section,
+.job-opening-form .manager-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #c6cdd4;
+  /* Light gray border */
+  border-radius: 10px;
+  background-color: #e1e8f0;
+  /* Lighter blue for sections */
+}
+
+.job-opening-form a {
+  color: #5085B6;
+  /* Themed link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.job-opening-form a:hover {
+  color: #3e6489;
+  /* Darker shade on hover */
+}
+
+.job-opening-form .center {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-opening-form {
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .job-opening-form input[type="text"],
+  .job-opening-form input[type="email"],
+  .job-opening-form input[type="number"],
+  .job-opening-form select {
+    font-size: 12px;
+  }
+
+  .job-opening-form button {
+    width: 100%;
+  }
+
+  .job-opening-form ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-opening-form.form-group {
+    align-items: center;
+  }
+
+  .form-submit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-submit .submit-button {
+    width: auto;
+    max-width: 300px;
+  }
+}
+

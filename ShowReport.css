@@ -1,0 +1,135 @@
+/* Overlay styling */
+.show-report-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  overflow: hidden;
+}
+
+/* Container styling */
+.show-report-container {
+  background: #f9f9f9; /* Light background for better readability */
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1200px; /* Wider modal for larger screens */
+  max-height: 90%;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow for a modern look */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+.show-report-header {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background: #f9f9f9;
+  z-index: 1;
+}
+
+.show-report-header h5 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333; /* Darker text for better readability */
+  flex: 1; /* Allow the title to take up available space */
+}
+
+.overall_score_report {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff; /* Blue color for better visibility */
+  margin-top: 10px; /* Add spacing for when it moves to the next line */
+  flex-shrink: 0; /* Prevent shrinking of the score text */
+}
+
+/* Close button styling */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666; /* Neutral color for the close button */
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ff4d4d; /* Red color on hover for better visibility */
+}
+
+/* Content layout */
+.show-report-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+}
+
+.show-report-left {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 70vh; /* Ensure the left column is scrollable */
+}
+
+.show-report-right {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 70vh; /* Ensure the right column is scrollable */
+}
+
+/* List group styling */
+.list-group-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background: #f9f9f9; /* Light background for list items */
+  color: #333;
+}
+
+.list-group-item p {
+  margin: 5px 0;
+}
+
+.list-group-item strong {
+  color: #007bff; /* Blue color for labels */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .show-report-header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .overall_score_report {
+    margin-top: 5px; /* Reduce spacing for smaller screens */
+  }
+
+  .show-report-content {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .show-report-left,
+  .show-report-right {
+    max-height: none; /* Remove height restriction for smaller screens */
+  }
+}

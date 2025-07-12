@@ -1,0 +1,158 @@
+/* General Container */
+.update-opening-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 2px;
+  font-family: Arial, sans-serif;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Heading */
+.update-opening-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Form Labels */
+.update-opening-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #212020;
+}
+
+/* Input Fields */
+.update-opening-form input[type="text"],
+.update-opening-form input[type="email"],
+.update-opening-form input[type="number"],
+.update-opening-form input[type="range"],
+.update-opening-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.update-opening-form button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-opening-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Section Containers */
+.update-opening-form div {
+  margin-bottom: 20px;
+}
+
+/* Responsibilities List */
+.update-opening-form .responsibilities-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.update-opening-form .responsibilities-list p {
+  flex: 1;
+  margin-right: 10px;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.update-opening-form .responsibilities-list button {
+  padding: 5px;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.update-opening-form .responsibilities-list button:hover {
+  background-color: #b02a37;
+}
+
+/* Skill Groups */
+.update-opening-form .skill-group {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.update-opening-form .skill-group h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.update-opening-form .skill-group ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.update-opening-form .skill-group li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-opening-form .skill-group li button {
+  padding: 3px;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.update-opening-form .skill-group li button:hover {
+  background-color: #e63946;
+}
+
+/* Experience Slider */
+.update-opening-form .experience-slider label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.update-opening-form .experience-slider input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.update-opening-form .submit-button {
+  text-align: center;
+}
+
+.update-opening-form .submit-button button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-opening-form .submit-button button:hover {
+  background-color: #0056b3;
+}
